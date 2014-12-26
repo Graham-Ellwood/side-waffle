@@ -1,9 +1,7 @@
-﻿(function() {
+﻿(function (app) {
     'use strict';
-
-    angular
-        .module('app')
-        .directive('$safeitemname$', $safeitemname$);
+    
+     app.directive('$safeitemname$', $safeitemname$);
 
     $safeitemname$.$inject = ['$window'];
     
@@ -22,4 +20,4 @@
         }
     }
 
-})();
+})(angular.module('showroom'));

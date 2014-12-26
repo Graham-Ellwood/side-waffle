@@ -1,9 +1,7 @@
-﻿(function () {
+﻿(function (app) {
     'use strict';
-
-    angular
-        .module('app')
-        .controller('$safeitemname$', $safeitemname$);
+   
+    app.controller('$safeitemname$', $safeitemname$);
 
     $safeitemname$.$inject = ['$location']; 
 
@@ -16,4 +14,4 @@
 
         function activate() { }
     }
-})();
+})( angular.module('showroom'));

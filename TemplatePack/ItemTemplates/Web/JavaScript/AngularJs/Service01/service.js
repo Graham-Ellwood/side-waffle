@@ -1,9 +1,7 @@
-﻿(function () {
+﻿(function (app) {
     'use strict';
-
-    angular
-        .module('app')
-        .service('$safeitemname$', $safeitemname$);
+    
+    app.service('$safeitemname$', $safeitemname$);
 
     $safeitemname$.$inject = ['$http'];
 
@@ -12,4 +10,4 @@
 
         function getData() { }
     }
-})();
+})(angular.module('showroom'));

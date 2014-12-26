@@ -4,7 +4,7 @@
         $rootScope;
 
     beforeEach(function () {
-        module('app');
+        module('showroom');
         inject(function (_$controller_, _$httpBackend_, _$rootScope_) {
             $controller = _$controller_;
             $httpBackend = _$httpBackend_;
